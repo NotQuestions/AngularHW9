@@ -1,0 +1,34 @@
+<form [formGroup]="myForm">
+  <label > Name </label>
+  <input [formControl]="name" >
+  <label > Email </label>
+  <input [formControl]="email" >
+  <label > Login </label>
+  <input [formControl]="login" >
+  <label > Password </label>
+  <input [formControl]="password" >
+  <label > Address </label>
+  <input [formControl]="address" >
+  <button (click)="checkingValid(myForm)">Button </button>
+</form>
+
+<ul>
+  <li routerLink='module-one'>Module 1 (Edit name)</li>
+  <li routerLink="module-two">Module 2 (Edit login and password)</li>
+  <li routerLink="module-three">Module 3 (Edit address and email)</li>
+</ul>
+<hr>
+<div *ngIf=user>
+  <div>Name: {{user.name}} </div>
+  <div>Login: {{user.login}}</div>
+  <div>Password: {{user.password}}</div>
+  <div>Email: {{user.email}}</div>
+  <div>Address: {{user.address}}</div>
+</div>
+<hr>
+<h1>Task 2.  Counter</h1>
+<h1>{{count}}</h1>
+<app-counter (xxx)="setCount($event)"></app-counter>
+<router-outlet ></router-outlet>
+
+

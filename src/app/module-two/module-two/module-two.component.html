@@ -1,0 +1,18 @@
+<h2>Edit User</h2>
+<form [formGroup]="formModuleTwo" >
+  <label>Login </label>
+  <input [formControl]="login">
+  <label>Password </label>
+  <input [formControl]="password">
+  <button (click)="setData(formModuleTwo)">Save</button>
+</form>
+<hr>
+  <div *ngIf=user>
+    <div>Name: {{user.name}} </div>
+    <div>Login: {{user.login}}</div>
+    <div>Password: {{user.password}}</div>
+    <div>Email: {{user.email}}</div>
+    <div>Address: {{user.address}}</div>
+  </div>
+<hr>
+<a routerLink="">Back HomePage  </a>

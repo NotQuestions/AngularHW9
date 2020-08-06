@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularHW9"
+    }
+  },
+  "defaultProject": "AngularHW9",
+  "cli": {
+    "analytics": "345ec3e5-7dd3-4945-8a8c-6e855b87f620"
+  }
 }
